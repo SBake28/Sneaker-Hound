@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sneaker Hound - The Sneaker Collectors Best Friend</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Saira:400,700" rel="stylesheet">
+    </head>
+  <body>
+    <header class="center hidden">
+      <div id="headerLogo" class = "center">
+        <img src="http://i63.tinypic.com/rh37mx.png">
+      </div>
+      <div class="headerNav">
+        <button class="goToSniffOut navigationBtn navButton">Sniff Out Sneakers</button>
+        <button class="goToUpcoming navigationBtn navButton">Upcoming Releases</button>
+      </div>
+    </header>
+    <main>
+    	<div id="landing" class="center">
+        <div id="landingLogo">
+          <img src="http://i63.tinypic.com/rh37mx.png">
+        </div>
+    		<p>Sneaker Hound is a sneaker collector's best friend - here to help you sniff out the perfect pair to add to your collection.</p>
+        <p>Click "Sniff Out Sneakers" to get started or "Upcoming Releases" to check out what's coming soon from Nike and Air Jordan.</p>
+        <button class="goToSniffOut landingBtn btn">Sniff Out Sneakers</button>
+        <button class="goToUpcoming landingBtn btn">Upcoming Releases</button>
+      </div>
+    	<div id="sneakerSelection" class="hidden center">
+    		<p>Let us help sniff out what you're looking for!</p> 
+        <p> Choose from any of the popular models below to begin searching.</p>
+			  <div id="sneakerGrid" class="center">
+					<div id="jordans">
+					</div>
+			  </div>
+			</div>
+    	<div id="sneakerPage" class="hidden center">
+    		<div id="sneakerPagePic" class="center">
+    			<img src="">
+    		</div>
+    		<div id="sneakerInfo">
+        </div>
+    		<form id="searchDetails">
+          <div id="genderSection">
+    			  <p>Gender</p>
+      			<select name="gender" id="genderSelect">
+      				<option value="US Shoe Size (Men's)" id="mensSizes">Men's</option>
+      				<option value="US Shoe Size (Women's)" id="womensSizes">Women's</option>
+      			</select>
+          </div>
+          <div id="conditionSection">
+      			<p>Condition</p>
+      			<select name="condition" id="conditionSelect">
+      				<option value="New">New</option>
+      				<option value="Used">Used</option>
+      				<option value="Either">New or Used</option>
+      			</select>
+          </div>
+          <div id="sizeSection">
+      			<p>Size</p>
+      			<select name="size" id="sizeSelect">
+      				<option value="5">5</option>
+      				<option value="5.5">5.5</option>
+      				<option value="6">6</option>
+      				<option value="6.5">6.5</option>
+      				<option value="7">7</option>
+      				<option value="7.5">7.5</option>
+      				<option value="8">8</option>
+      				<option value="8.5">8.5</option>
+      				<option value="9">9</option>
+      				<option value="9.5">9.5</option>
+      				<option value="10">10</option>
+      				<option value="10.5">10.5</option>
+      				<option value="11">11</option>
+      				<option value="11.5">11.5</option>
+      				<option value="12">12</option>
+     				  <option value="12.5">12.5</option>
+      				<option value="13">13</option>
+      				<option value="14.5">14.5</option>
+      				<option value="15">15</option>
+      				<option value="15.5">15.5</option>
+      				<option value="16">16</option>
+      				<option value="16.5">16.5</option>
+      				<option value="17">17</option>
+      				<option value="17.5">17.5</option>
+      				<option value="18">18</option>
+      			</select>
+          </div>
+          <div id="colorwaySection">
+      			<label for="colorway">Colorway/Nickname</label>
+            <br>
+      			<input id="colorwayInput" type="text" placeholder="Space Jam, Red, etc..">
+          </div>
+          <br>
+      		<input type="submit" class="search btn" value="Sniff out my sneakers!">
+    		</form>
+    	</div>
+    	<div id="upcomingReleases" class="hidden center">
+    		<h2>Upcoming Releases</h2>
+        <p>Click on any shoe below to get more information from Nike.com</p>
+    		<div id="releases" class="center">
+    		</div>
+    	</div>
+    	<div id="resultsPage" class="hidden">
+        <div id="loader" class="center hidden">
+          <h3>SNIFFING FOR SNEAKERS</h3>
+          <img src = "https://i.imgur.com/IxsZv4L.gif">
+        </div>
+    		<div id="resultsHeader" class="center">
+     		</div>
+        <div id="contents">
+          <div id="results" class="center">
+       		</div>
+       		<div id="resultsNav" class="center">
+       			<button class="prevPage pgBtn hidden">&laquo; Prev Page</button>
+            <button class="nextPage pgBtn hidden">Next Page &raquo;</button>
+       		</div>
+        </div>
+     	</div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

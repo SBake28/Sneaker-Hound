@@ -1,0 +1,445 @@
+/* General */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Saira', sans-serif;
+}
+
+body {
+	background-color: black;
+	color: white;
+}
+
+a {
+ 	text-decoration: none;
+}
+
+#sneakerSelection, #sneakerPage, #upcomingReleases, #resultsPage {
+	padding-top: 200px;
+}
+
+header {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	min-height: 188px;
+	height: 20%;
+	max-height: 240px;
+	margin-bottom: 5%;
+	border-bottom: #C41F2F 3px solid;
+}
+
+#headerLogo {
+    height: 60%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#headerLogo img{
+	max-width: 100%;
+    max-height: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+.center {
+	text-align: center;
+	margin: auto;
+}
+
+/* Landing Page */
+
+#landing {
+	width: 70%;
+	font-size: .7em;
+	margin-top: 10%;
+}
+
+#landingLogo {
+    max-width: 600px;
+    margin: auto;
+
+}
+
+#landingLogo img{
+	max-width: 100%;
+    max-height: 100%;
+}
+
+/*Sniff Out Sneakers Selection Page*/
+
+#sneakerGrid {
+	margin: 10px;
+}
+
+.shoeContainer {
+	width: 100%;
+	margin: auto;
+}
+
+.shoePic {
+	width: 50%;
+	max-width: 300px;
+}
+
+#sneakerPagePic {
+	width: 250px;
+}
+
+#sneakerPagePic img {
+	width: 100%;
+}
+
+#sneakerSelection p {
+	width: 70%;
+	margin: auto;
+}
+
+.shoeContainer:hover {
+	cursor: pointer;
+}
+
+/*Sniff Out Sneakers Input*/
+
+#colorwaySection, #genderSection, #conditionSection, #sizeSection {
+	display: inline-block;
+}
+
+#colorwaySection label, #genderSection p, #conditionSection p, #sizeSection p {
+	color: #C41F2F;
+}
+
+#genderSelect, #conditionSelect, #sizeSelect{
+	background: black;
+	border-color: white;
+	color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#colorwayInput {
+	background: black;
+	border-color: white;
+	color: white;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+#searchDetails {
+	margin: 5px;
+}
+
+/*Results*/
+
+#resultsPage {
+	width: 100%;
+}
+
+#results {
+	margin-top: 10px;
+	font-size: .7em;
+}
+
+#results a {
+	text-decoration: none;
+	color: white;
+}
+
+table td {
+    border-top: thin solid #C41F2F; 
+    border-bottom: thin solid #C41F2F;
+    cursor: pointer;
+    min-width: 80px;
+    text-transform: uppercase;
+}
+
+.resultPic {
+	width:130px;
+	height:170px;
+	margin: auto;
+}
+
+.resultPic img {
+	object-fit: contain;
+	max-height: 170px;
+}
+
+table tr:nth-of-type(even) {
+	background-color: #202020;
+}
+
+table tr:hover {
+	background: #C41F2F;
+}
+
+/*Sniff Out Sneakers Loader*/
+
+#loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: black;
+}
+
+#loader h3 {
+	margin-top: 20px;
+}
+
+#loader img {
+	margin-top: 50px;
+	width: 50%;
+	max-width: 350px;
+}
+
+/*Upcoming Releases Page*/
+
+#releases {
+	margin: 30px auto 0;
+}
+
+.releaseCard {
+	margin: 20px auto;
+	background: white;
+	color: black;
+	padding: 1.04166%;
+	width: 50%;
+	margin: 10px auto;
+	border: 2px #C41F2F solid;
+}
+
+.releaseCard p {
+	margin-bottom: 5px;
+	color: #6f6f70;
+}
+
+.releaseImg {
+	width: 60%;
+	margin: 10px auto;
+}
+
+.releaseImg img {
+	width: 100%;
+}
+
+/*Buttons*/
+
+.headerNav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.navigationBtn {
+	position: relative;
+	display: inline-block;
+	height: 50px;
+	width: 150px;
+	margin: -3px 7px;
+	padding: 5px 5px;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: #C41F2F;
+	border: 3px #C41F2F solid;
+	border-radius: 4px;
+	text-transform: uppercase;
+	outline: 0;
+	overflow:hidden;
+	background: none;
+	z-index: 1;
+	cursor: pointer;
+	transition: 0.08s ease-in;
+	-o-transition: 0.08s ease-in;
+	-ms-transition: 0.08s ease-in;
+	-moz-transition: 0.08s ease-in;
+	-webkit-transition: 0.08s ease-in;
+}
+
+.navButton:hover {
+	color: white;
+}
+
+.navButton:before {
+	content: "";
+	position: absolute;
+	background: #C41F2F;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 100%;
+	z-index: -1;
+	-webkit-transition: top 0.09s ease-in;
+}
+
+.navButton:hover:before {
+	top: 0;
+}
+
+.selectedNav {
+	background: white;
+	color: #C41F2F;
+}
+
+.btn {
+	appearance: none;
+	background-color: transparent;
+	border: 2px solid #C41F2F;
+	border-radius: 0.6em;
+	color: #C41F2F;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 5px;
+	padding: 1.2em 2.8em;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+
+	&:hover,
+	&:focus {
+	color: #fff;
+	outline: 0;
+	}
+}
+
+.landingBtn, .search {
+	border-color: #C41F2F;
+	color: #fff;
+	box-shadow: 0 0 40px 40px #C41F2F inset, 0 0 0 0 #C41F2F;
+	transition: all 150ms ease-in-out;
+}
+
+.landingBtn:hover, .search:hover {
+    box-shadow: 0 0 10px 0 #C41F2F inset, 0 0 10px 4px #C41F2F;
+}
+
+.pgBtn {
+	height: 45px;
+	width: 150px;
+	border: 2px solid white;
+	color: white;
+	background-color: transparent;
+	cursor: pointer;
+	margin: 10px;
+	outline: none;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 980px) {
+	.releaseCard {
+		margin: 20px auto;
+		background: white;
+		color: black;
+		float: left;
+		padding: 1%;
+		width: 30.67%;
+		margin: 1.33%;
+	}
+
+	.releaseCard:nth-of-type(3n+4) {
+		clear: left;
+	}
+
+	.releaseCard h4 {
+		font-size: 16px;
+	}
+
+	.releaseCard p {
+		font-size: 14px;
+	}
+
+	#sneakerPagePic {
+		width: 350px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.shoeContainer {
+		float: left;
+		padding: 1.33%;
+		width: 30.67%;
+		margin: 1.33%;
+	}
+
+	.shoeContainer:nth-of-type(3n+4) {
+		clear: left;
+	}
+
+	.shoePic {
+		width: 100%;
+	}
+
+	#results {
+		font-size: .9em;
+	}
+
+	.resultPic {
+		width: 150px;
+		height:200px;
+	}
+
+	.resultPic img {
+		max-height: 200px;
+		max-width: 150px;
+	}
+
+	#landing {
+		font-size: 1em;
+	}
+
+	#landing p{
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.resultPic {
+		width: 100px;
+		height: 150px;
+	}
+
+	.resultPic img {
+		max-width: 100px;
+		max-height: 150px;
+	}
+
+	#results {
+		font-size: .6em;
+	}
+}
+
+@media screen and (max-width: 332px) {
+	.navigationBtn {
+		width: 125px;
+	}
+
+	.pgBtn {
+		width: 125px; 
+	}
+
+	#resultsNav {
+		margin-left: 20px;
+	}
+
+	#resultsHeader {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (min-height: 1000px) {
+	#sneakerSelection, #sneakerPage, #upcomingReleases, #resultsPage {
+		padding-top: 250px;
+	}
+
+	.shoePic {
+		max-width: 350px;
+	}
+}
+
