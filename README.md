@@ -1,5 +1,5 @@
 # Sneaker-Hound
- built using HTML/CSS/JavaScript/jQuery)
+ built using (HTML/CSS/JavaScript/jQuery)
 
 
 <img src="Imgs/Sneakershoundfinal.png" width="500" height="300" />  
